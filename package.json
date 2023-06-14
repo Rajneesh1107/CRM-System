@@ -1,0 +1,24 @@
+{
+  "name": "crm-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajneesh1107/CRM-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rajneesh1107/CRM-System/issues"
+  },
+  "homepage": "https://github.com/Rajneesh1107/CRM-System#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
