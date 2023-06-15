@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Grow</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">keyboard_double_arrow_left</span>
+              </div>
+             
+              <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">account_circle</span>
+              </div>
+
+        </header>
+        
+
+        <!-- sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand  ">
+                  Fast Grow
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+               
+              </div>
+
+              <input type="text" placeholder="Seach" id="searchbar">
+      
+              <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                   
+                  <a href="#" target="_blank">
+                    <span class="material-icons-outlined">dashboard</span> Dashboard
+                  </a>
+                </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                  <span class="material-icons-outlined">task</span> Tasks
+                </a>
+              </li>
+              <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                  <span class="material-icons-outlined">calendar_month</span> Calendar
+                </a>
+              </li>
+              <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                  <span class="material-icons-outlined">groups</span> Customers
+                </a>
+              </li>
+              <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                  <span class="material-icons-outlined">person</span> Employees
+                </a>
+              </li>
+              
+              <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                  <span class="material-icons-outlined">poll</span> Cases
+                </a>
+              </li>
+              <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                  <span class="material-icons-outlined">settings</span> Settings
+                </a>
+              </li>
+            </ul>
+
+
+        </aside>
+
+        <!-- main  -->
+        <main class="main-container">
+            <hr>
+
+            <div class="main-title">
+                <h2>DASHBOARD</h2>
+              </div>
+      
+              <div class="main-cards">
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h3>Successful cases</h3>
+                   
+                  </div>
+                  <h1>280</h1>
+                </div>
+      
+                <div class="card">
+                  <div class="card-inner">
+                    <h3>Leads</h3>
+                    
+                  </div>
+                  <h1>385</h1>
+                </div>
+            <div class="card">
+                <div class="card-inner">
+                  <h3>Requests</h3>
+                 
+                </div>
+                <h1>500</h1>
+              </div>
+    
+              <div class="card">
+                <div class="card-inner">
+                  <h3>New Customers</h3>
+                 
+                </div>
+                <h1>56</h1>
+              </div>
+    
+            </div>
+    <hr>
+            <div class="charts">
+    
+              <div class="charts-card">
+                <h2 class="chart-title">Cases</h2>
+                <div id="bar-chart"></div>
+              </div>
+    
+              <div class="charts-card">
+                <h2 class="chart-title">Purchase and Sales Orders</h2>
+                <div id="area-chart"></div>
+              </div>
+    
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js" ></script>
+    <script src="scripts/dashboard.js"></script>
+</body>
+<!-- apexCharts -->
+
+
+</html>
