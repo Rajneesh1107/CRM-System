@@ -107,6 +107,7 @@
 .main-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
 .main-cards {
@@ -189,4 +190,14 @@
   }
   #searchbar:focus{
     outline: 0;
+  }
+  #addemp{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #722ed1;
+    border: 2px solid #722ed1;
+    margin-top: 10px;
   }
