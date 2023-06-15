@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pages</title>
+    <link rel="stylesheet" href="../styles/employee.css">
+</head>
+<body> 
+
+
+
+     <section>
+       <div id="leftSide">
+
+       </div>
+
+       <div id="rightSide">
+        <nav id="nav">
+            <div class="logo">
+              <h2>Logo</h2>
+            </div>
+            <div class="rightNav">
+              <div class="notification"><h2>notification</h2></div>
+              <div class="login"><h2>Login</h2></div>
+            </div>
+        </nav>
+        <div class="nav2">
+            <h2 class="employee">Employee <span id="next">></span></h2>
+            <button class="addEmp"><p>⊕ Add new employee</p></button>
+        </div>
+
+      <div class="nav3">
+        <div class="left">
+            <input type="text" placeholder="Search by name or email"> 
+            <button class="position btnsrc">Position</button>
+            <button class="department btnsrc">Department</button>
+            <button class="status btnsrc">Status</button>
+        </div>
+        <div class="right">
+            <p>Sort By</p>
+           <select name="" id="filter">
+            <option value="status">Status</option>
+            <option value="position">Position</option>
+            <option value="department">Department</option>
+           </select>
+        </div>
+      </div>
+      <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <td><h4>Name</h4></td>
+                    <td><h4>Position</h4></td>
+                    <td><h4>Department</h4></td>
+                    <td><h4>Status</h4></td>
+                    <td><h4>Phone No.</h4></td>
+                    <td><h4>Email</h4></td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+      </div>
+       </div>
+     </section>
+      
+    
+</body>
+<script src="../scripts/employee.js"></script>
+</html>
