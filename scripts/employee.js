@@ -1,8 +1,49 @@
 let url= `https://crm-system-9eof.onrender.com/users`
 // if click on the tr
 let tbody=document.getElementById("tbody")
+let positionBtn=document.querySelector(".position")
+let filtered=document.getElementById("filter")
 
+// search by position btn
+let searchBtn=document.querySelector(".searchBtn")
+    positionBtn.addEventListener("click",()=>{fetchedData(`${url}?position=${searchBtn.value}`)})
+
+// Search by status
+let statusBtn=document.querySelector(".status")
+    statusBtn.addEventListener("click",()=>{fetchedData(`${url}?status=${searchBtn.value}`)})
+
+// add new Employee Btn
 let addEmpBtn=document.querySelector(".addEmp")
+    addEmpBtn.addEventListener("click",()=>{
+        postData()
+    })
+
+async function postData(){
+
+    try {
+        let res= await fetch(`${url}`,{
+            method:"POST",
+            headers:{
+                "content-type":"application/json"
+            },
+            body:JSON.stringify({
+                name:"Rajneesh Yadav",
+                position:"HR",
+                department:"Marketing",
+                status:"Active",
+                phone_number:7054361919,
+                email:"rajneeshyadav11072002@gmail.com"
+            })
+        })
+        
+        let data = await res.json();
+            fetchedData(url)
+    } catch (error) {
+       console.log(error) 
+    }
+}
+
+
 fetchedData(url)
 async function fetchedData(url){
 try {
