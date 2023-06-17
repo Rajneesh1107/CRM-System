@@ -25,6 +25,7 @@
               <div class="header-right">
                 <span class="material-icons-outlined">notifications</span>
                 <span class="material-icons-outlined">account_circle</span>
+                <span id="username"></span>
               </div>
 
         </header>
@@ -43,14 +44,14 @@
               <input type="text" placeholder="Seach" id="searchbar">
       
               <ul class="sidebar-list">
-                <li class="sidebar-list-item">
+                <li class="sidebar-list-item ">
                    
-                  <a href="#" target="_blank">
+                  <a href="dashboard.html"  id="active">
                     <span class="material-icons-outlined">dashboard</span> Dashboard
                   </a>
                 </li>
             <li class="sidebar-list-item">
-                <a href="#" target="_blank">
+                <a href="task.html" >
                   <span class="material-icons-outlined">task</span> Tasks
                 </a>
               </li>
@@ -78,6 +79,11 @@
               <li class="sidebar-list-item">
                 <a href="#" target="_blank">
                   <span class="material-icons-outlined">settings</span> Settings
+                </a>
+              </li>
+              <li class="sidebar-list-item" >
+                <a href="login.html"id="logout" >
+                  <span class="material-icons-outlined" >logout</span> Log Out
                 </a>
               </li>
             </ul>
@@ -141,7 +147,7 @@
               </div>
     
               <div class="charts-card">
-                <h2 class="chart-title">Purchase and Sales Orders</h2>
+                <h2 class="chart-title">Performance</h2>
                 <div id="area-chart"></div>
               </div>
     

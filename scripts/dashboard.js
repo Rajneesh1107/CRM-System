@@ -1,5 +1,11 @@
 // SIDEBAR TOGGLE
 
+
+let username=document.getElementById("username");
+const user = JSON.parse(localStorage.getItem('username')) || 'User';
+username.innerText=user;
+
+
 var sidebarOpen = false;
 var sidebar = document.getElementById("sidebar");
 
@@ -21,51 +27,113 @@ function closeSidebar() {
 
 // ---------- CHARTS ----------
 
-// BAR CHART
-var barChartOptions = {
+var options = {
   series: [{
-    data: [10, 8, 6, 4, 2]
-  }],
+  data: [44, 55, 41, 64, 22, 43, 21]
+}, {
+  data: [53, 32, 33, 52, 13, 44, 32]
+}],
   chart: {
-    type: 'bar',
-    height: 350,
-    toolbar: {
-      show: false
+  type: 'bar',
+  height: 430
+},
+plotOptions: {
+  bar: {
+    horizontal: false,
+    dataLabels: {
+      position: 'top',
     },
-  },
-  colors: [
-    "#246dec",
-    "#cc3c43",
-    "#367952",
-    "#f5b74f",
-    "#4f35a1"
-  ],
-  plotOptions: {
-    bar: {
-      distributed: true,
-      borderRadius: 4,
-      horizontal: false,
-      columnWidth: '40%',
-    }
-  },
-  dataLabels: {
-    enabled: false
-  },
-  legend: {
-    show: false
-  },
-  xaxis: {
-    categories: ["Jan", "Feb", "March", "April", "May"],
-  },
-  yaxis: {
-    title: {
-      
-    }
   }
+},
+dataLabels: {
+  enabled: true,
+  offsetX: -6,
+  style: {
+    fontSize: '12px',
+    colors: ['#fff']
+  }
+},
+stroke: {
+  show: true,
+  width: 1,
+  colors: ['#fff']
+},
+tooltip: {
+  shared: true,
+  intersect: false
+},
+xaxis: {
+  categories: [2001, 2002, 2003, 2004, 2005, 2006, 2007],
+},
 };
 
-var barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartOptions);
-barChart.render();
+var chart = new ApexCharts(document.querySelector("#bar-chart"), options);
+chart.render();
+
+
+
+
+// BAR CHART
+// var barChartOptions = {
+//   series: [{
+//     data: [44, 55, 41, 64, 22, 43, 21]
+//   }, {
+//     data: [53, 32, 33, 52, 13, 44, 32]
+//   }],
+//   chart: {
+//     type: 'bar',
+//     height: 350,
+//     toolbar: {
+//       show: false
+//     },
+//   },
+//   // colors: [
+//   //   "#246dec",
+//   //   "#cc3c43",
+//   //   "#367952",
+//   //   "#f5b74f",
+//   //   "#4f35a1"
+//   // ],
+//   plotOptions: {
+//     bar: {
+//       distributed: true,
+//       borderRadius: 4,
+//       horizontal: false,
+//       columnWidth: '40%',
+//     }
+//   },
+//   dataLabels: {
+//     enabled: false,
+//     offsetX: -6,
+//     style: {
+//       fontSize: '12px',
+//       colors: ['#fff']
+//     }
+//   },
+//   stroke: {
+//     show: true,
+//     width: 1,
+//     colors: ['#fff']
+//   },
+//   tooltip: {
+//     shared: true,
+//     intersect: false
+//   },
+//   legend: {
+//     show: false
+//   },
+//   xaxis: {
+//     categories: ["Jan", "Feb", "March", "April", "May"],
+//   },
+//   yaxis: {
+//     title: {
+      
+//     }
+//   }
+// };
+
+// var barChart = new ApexCharts(document.querySelector("#bar-chart"), barChartOptions);
+// barChart.render();
 
 
 // AREA CHART
