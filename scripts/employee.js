@@ -3,22 +3,49 @@ let url= `https://crm-system-9eof.onrender.com/users`
 let tbody=document.getElementById("tbody")
 let positionBtn=document.querySelector(".position")
 let filtered=document.getElementById("filter")
+let container=document.getElementById("container")
+
+
+let form_container=document.querySelector(".form-container")
+
+
+
+
+// pagination button
+    let paginationBox=document.getElementById("pagination-wrapper")
+
+
 
 // search by position btn
 let searchBtn=document.querySelector(".searchBtn")
-    positionBtn.addEventListener("click",()=>{fetchedData(`${url}?position=${searchBtn.value}`)})
+    positionBtn.addEventListener("click",()=>{fetchedData(`${url}?position=${searchBtn.value}`,1,10)})
 
 // Search by status
 let statusBtn=document.querySelector(".status")
-    statusBtn.addEventListener("click",()=>{fetchedData(`${url}?status=${searchBtn.value}`)})
+    statusBtn.addEventListener("click",()=>{fetchedData(`${url}?status=${searchBtn.value}`,1,10)})
 
 // add new Employee Btn
 let addEmpBtn=document.querySelector(".addEmp")
     addEmpBtn.addEventListener("click",()=>{
-        postData()
+        container.style.display="none"
+        paginationBox.style.display="none"
+        form_container.style.display="block"
     })
 
-async function postData(){
+    let formData=document.querySelector("form")
+
+    formData.addEventListener("submit",()=>{
+        event.preventDefault();
+        container.style.display="block"
+        paginationBox.style.display="flex"
+        form_container.style.display="none"
+        postData(url)
+     
+    })
+
+   let addEmpNameInput=document.createElement("name")
+
+async function postData(url){
 
     try {
         let res= await fetch(`${url}`,{
@@ -27,35 +54,64 @@ async function postData(){
                 "content-type":"application/json"
             },
             body:JSON.stringify({
-                name:"Rajneesh Yadav",
-                position:"HR",
-                department:"Marketing",
-                status:"Active",
-                phone_number:7054361919,
-                email:"rajneeshyadav11072002@gmail.com"
+                name:formData.name.value,
+                position:formData.position.value,
+                department:formData.department.value,
+                status:formData.status.value,
+                phone_number:formData.phone.value,
+                email:formData.email.value
             })
         })
         
         let data = await res.json();
-            fetchedData(url)
+            fetchedData(url,1,10)
     } catch (error) {
        console.log(error) 
     }
 }
 
 
-fetchedData(url)
-async function fetchedData(url){
+fetchedData(url,1,10)
+async function fetchedData(url,page,limit){
 try {
-   let res = await fetch(url);
+   let res = await fetch(`${url}?_page=${page}&_limit=${limit}`);
+
+   let total_Item = res.headers.get("X-Total-Count")
+   let  total_Page= Math.ceil(total_Item/limit)
+    // console.log(total_Item,total_Page)
+
+    pagination(total_Page,limit)
+
    let data = await res.json();
 //    console.log(data) 
-list_data(data)
-} catch (error) {
+    list_data(data)
+    } catch (error) {
   console.log(error)  
-}
+    }
 
-}
+    }
+
+    function pagination(total_Page,limit){
+        paginationBox.innerHTML="";
+        
+        for(let i=1;i<=total_Page;i++){
+        
+          paginationBox.append(paginationBtn(i,limit))
+        
+        }
+        
+        }
+        
+        function paginationBtn(id,limit){
+        
+          let pgBtn=document.createElement("button")
+              pgBtn.className="pagination-button"
+              pgBtn.innerText=id;
+              pgBtn.addEventListener("click",()=>{ fetchedData(url,id,limit)})
+              return pgBtn
+        
+        
+        }
 
 function list_data(data){
 

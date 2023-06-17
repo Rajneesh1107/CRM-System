@@ -1,0 +1,22 @@
+
+
+###
+GET https://crm-system-9eof.onrender.com/users
+
+
+###
+DELETE https://crm-system-9eof.onrender.com/users/106
+
+###
+POST https://crm-system-9eof.onrender.com/users
+Content-Type: application/json
+{
+    // json data
+}
+
+###
+PATCH https://crm-system-9eof.onrender.com/users/id
+Content-Type: application/json
+{
+    //updated json data
+}
