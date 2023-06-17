@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Grow</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles/dashboard.css">
+  <link rel="stylesheet" href="styles/task.css">
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- header -->
+    <header class="header">
+
+      <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined">keyboard_double_arrow_left</span>
+      </div>
+
+      <div class="header-right">
+        <span class="material-icons-outlined">notifications</span>
+        <span class="material-icons-outlined">account_circle</span>
+        <span id="username"></span>
+      </div>
+
+    </header>
+
+
+    <!-- sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand  ">
+          Fast Grow
+        </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+
+      </div>
+
+      <input type="text" placeholder="Seach" id="searchbar">
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+
+          <a href="dashboard.html" >
+            <span class="material-icons-outlined">dashboard</span> Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="task.html"  id="active">
+            <span class="material-icons-outlined">task</span> Tasks
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="calender.html" >
+            <span class="material-icons-outlined">calendar_month</span> Calendar
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">groups</span> Customers
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" >
+            <span class="material-icons-outlined">person</span> Employees
+          </a>
+        </li>
+
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">poll</span> Cases
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+            <span class="material-icons-outlined">settings</span> Settings
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="login.html" id="logout">
+            <span class="material-icons-outlined">logout</span> Log Out
+          </a>
+        </li>
+      </ul>
+
+
+    </aside>
+
+    <!-- main  -->
+
+    <main class="main-container">
+      <hr>
+
+      <div class="main-title">
+        <h2>Tasks</h2>
+        <button id="addemp">
+          <span class="material-icons-outlined">add_circle</span>Add a Task
+        </button>
+
+      </div>
+      <hr>
+
+      <div class="addtaskk" id="taskadddiv">
+        <h2>Add a Task</h2> 
+        <input type="text" name="" id="title" placeholder="Title"> 
+        <textarea name="" id="desc" cols="24"
+          rows="10" placeholder="Description"></textarea> 
+          <select name="" id="select">
+          <option value="">Select a type</option>
+          <option value="Follow Up">Follow Up</option>
+          <option value="Call Remainder">Call Remainder</option>
+        </select> 
+        <input type="date" id="date">
+         <input type="time" name="" id="time">
+       
+         <select name="" id="status">
+          <option value="">Select task status</option>
+          <option value="To-Do">To-Do</option>
+          <option value="In-Progress">In-Progress</option>
+          <option value="Completed">Completed</option>
+        </select> 
+
+        <div class="btn"> <button class="btn1" id="btn1">Save</button>
+           <button class="btn2" id="btn2">Cancel</button></div>
+      </div>
+
+      <div class="maintasksection" id="maintasksection">
+      
+
+    </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+  <script src="scripts/dashboard.js"></script>
+  <script src="scripts/task.js"></script>
+</body>
+<!-- apexCharts -->
+
+
+</html>

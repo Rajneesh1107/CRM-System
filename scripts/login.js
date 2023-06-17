@@ -30,21 +30,85 @@ signupLink.onclick = (() => {
   return false;
 });
 
-const adminData = { "username": "admin", "password" : "admin123"};
+const adminData = { "username": "admin", "password": "admin123" };
 
-const loginFormBtn = document.querySelector("input[type='submit']");
-const loginUsername = loginForm.querySelector("input[type='text']");
+const loginFormBtn = loginForm.querySelector("input[type='submit']");
+const loginUsername = loginForm.querySelector("input[type='email']");
+
+localStorage.setItem('username', loginUsername.value);
+
 const loginPassword = loginForm.querySelector("input[type='password']");
 
-loginFormBtn.addEventListener('click', (e)=>{
+loginFormBtn.addEventListener('click', (e) => {
   e.preventDefault();
   // console.log(adminData,loginUsername.value,loginPassword.value);
-  if (loginUsername.value === adminData.username && loginPassword.value === adminData.password){
-    window.location.href = "./hotelAdmin.html";
-    
+  if (loginUsername.value == "" || loginPassword.value == "") {
+    alert("Fill the required Login details")
   }
-  else{
-    window.location.href = "dashboard.html";
+  else if (loginUsername.value === adminData.username && loginPassword.value === adminData.password) {
+    alert("Welcome Admin")
+    window.location.href = "./addhotels.html";
   }
+  else {
+    fetch("https://crm-system-9eof.onrender.com/users")
+      .then(res => res.json())
+      .then((data) => {
+        let userFound = false;
+        for (let i = 0; i < data.length; i++) {
+          if ((data[i].email == loginUsername.value && data[i].password == loginPassword.value)) {
+            console.log(data)
+            localStorage.setItem("username", JSON.stringify(data[i].name))
+            alert(`Welcome Back ${data[i].name}`)
+            window.location.href = "./dashboard.html";
+            userFound = true;
+            break;
+          }
+        }
+        if (!userFound) {
+          alert("Wrong Credentials");
+          loginForm.reset()
+        }
+      })
+      .catch(err => console.log(err))
+  }
+
 })
 
+// signUp functionality
+
+let signUpForm = document.querySelector('form.signup');
+let signUpFormBtn = signUpForm.querySelector("input[type='submit']");
+let signUpName = signUpForm.querySelector("input[type='text']");
+let signUpEmail = signUpForm.querySelector("input[type='email']");
+let signUpPassword = document.getElementById("password")
+let signUpConfirmPassword = document.getElementById("confirm-password")
+
+signUpFormBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (signUpName.value == "" || signUpEmail.value == "" || signUpPassword.value == "" || signUpConfirmPassword.value == "") {
+    alert("Please fill all required details")
+  }
+  else if (signUpPassword.value !== signUpConfirmPassword.value) {
+    alert("Passwords do not match");
+  }
+  else {
+    let newSignUp = {
+      name: signUpName.value,
+      email: signUpEmail.value,
+      password: signUpPassword.value
+    };
+    fetch("https://crm-system-9eof.onrender.com/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newSignUp)
+    })
+      .then(res => res.json())
+      .then(data => {
+        alert("Signup successful!");
+        signUpForm.reset();
+      })
+      .catch(error => console.error(error));
+  }
+});

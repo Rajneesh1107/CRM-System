@@ -74,6 +74,8 @@
     background-color: rgba(138, 133, 133, 0.2);
     cursor: pointer;
   }
+  
+ 
 
   .sidebar-list-item > a {
     text-decoration: none;
@@ -89,6 +91,9 @@
       on small screens
     */
     z-index: 12 !important;
+  }
+  #active {
+    color: #722ed1;
   }
 
   /* main  */
@@ -107,6 +112,7 @@
 .main-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
 .main-cards {
@@ -190,3 +196,62 @@
   #searchbar:focus{
     outline: 0;
   }
+  #addemp{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #722ed1;
+    border: 2px solid #722ed1;
+    margin-top: 10px;
+  }
+ #username{
+  font-size: 18px;
+  border: 2px solid black;
+  padding: 3px;
+  border-radius: 3px;
+ }
+
+ @media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+}
+
+/* Small <= 768px */
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+}
+
+/* Extra Small <= 576px */
+@media screen and (max-width: 576px) {
+  .header-left {
+    display: none;
+  }
+}

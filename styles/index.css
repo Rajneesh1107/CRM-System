@@ -111,3 +111,91 @@ margin-top: 15px;
     margin: 10px 0;
     text-align: center;
   }
+
+  @media all and (min-width:750px) and (max-width:1080px){
+    .main-text{
+        width: 75%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    
+    }
+    .left-text{
+        width: 100%;
+        margin: auto;
+        /* margin-right: 50px; */
+       
+    }
+    .right-img{
+        margin-top: 50px;
+        width: 100%
+    }
+    .right-img img{
+        width: 100%;
+    }
+    .flickity-prev-next-button.previous {
+        left: -40px;
+        margin-top: 50px;
+      }
+      .flickity-prev-next-button.next {
+        right: -40px;
+        margin-top: 50px;
+      }
+  }
+
+  @media all and (min-width:300px) and (max-width:749px){
+    .main-text{
+        width: 75%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    
+    }
+    .left-text{
+        width: 100%;
+        margin: auto;
+        /* margin-right: 50px; */
+       
+    }
+    .right-img{
+        margin-top: 50px;
+        width: 100%
+    }
+    .right-img img{
+        width: 100%;
+    }
+
+    .flickity-button {
+        background: #333;
+        display: flex;
+        align-items: center;
+      }
+      .flickity-button:hover {
+        background: #F90;
+      }
+      
+      .flickity-prev-next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+      }
+      /* icon color */
+      .flickity-button-icon {
+        fill: white;
+      }
+      /* position outside */
+      .flickity-prev-next-button.previous {
+        left: -40px;
+        margin-top: 100px;
+      }
+      .flickity-prev-next-button.next {
+        right: -40px;
+        margin-top: 100px;
+      }
+
+  }
+
