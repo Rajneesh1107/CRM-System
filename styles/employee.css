@@ -30,13 +30,13 @@ section{
 }
 #leftSide{
     /* border:2px dotted blue; */
-    width:25%;
+    width:23%;
     margin-top: 10px;
 
 }
 #rightSide{
     /* border: 2px solid black; */
-    width: 75%;
+    width: 77%;
     margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     
@@ -61,16 +61,31 @@ section{
     padding: 3px;
     color: #722ed1;
     background-color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.addEmp:hover {
+  background-color: #722ed1;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .btnsrc{
     height: 30px;
     font-size: 15px;
     border-radius: 5px;
-    background-color: #fff;
+    color: #fff;
+    background-color: #696767;
     padding: 2px 5px;
     border:1px solid grey;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-}
+    transition: background-color 0.5s ease;
+  }
+  
+  .btnsrc:hover {
+    color:black;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(255, 99, 132, 0.2);
+  }
 
 .right{
     height: 30px;
@@ -94,8 +109,17 @@ section{
 .searchBtn{
 
     height: 30px;
-   border: none;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    width: 300px;
+   border-radius: 8px;
+    
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  }
+.searchBtn:hover{
+
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav3 > .right{
@@ -113,7 +137,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background-color:#fff;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
 
    
@@ -123,8 +147,20 @@ table {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     background-color:#fff ;
     color: black;
-    font-size: 15px;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+    
   }
+  
+ 
+  
+  table tr:hover {
+    background-color: #dcf6f5;
+    color: #000000;
+    transform: scale(.98);
+    box-shadow: 0 0 5px rgba(114, 111, 111, 0.3);
+  }
+  
   
   table td, table th {
     padding: 8px;
@@ -143,6 +179,13 @@ table {
   }
 .row{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    transition: background-color 0.3s ease;
+}
+
+.row:hover {
+  color:black;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(255, 99, 132, 0.2);
 }
 
 
@@ -214,5 +257,18 @@ table {
     margin-left: 4px;
     border-radius: 50%;
     box-shadow: rgba(183, 243, 247, 0.4) 5px 5px;
-    border:1px lightskyblue
+    border:1px lightskyblue;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
   }
+  .pagination-button:hover {
+    color: #fff;
+    background-color: #070807;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  } 
+  @media screen and (max-width:100 ) and (min-resolution: 768px) {
+    /* CSS rules for screens with a maximum width of 768 pixels and a minimum resolution of 2dppx */
+
+  }
+  
