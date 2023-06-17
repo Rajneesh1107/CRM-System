@@ -27,7 +27,7 @@
         </nav>
         <div class="nav2">
             <h2 class="employee">Employee <span id="next">></span></h2>
-            <button class="addEmp"><p>⊕ Add new employee</p></button>
+            <a class="addEmp"><p>⊕ Add new employee</p></a>
         </div>
 
       <div class="nav3">
@@ -36,6 +36,7 @@
             <button class="position btnsrc">Position</button>
             <button class="department btnsrc">Department</button>
             <button class="status btnsrc">Status</button>
+            <button class="all_data btnsrc">Refresh</button>
         </div>
         <div class="right">
             <p>Sort By</p>
@@ -62,7 +63,36 @@
 
             </tbody>
         </table>
+        
       </div>
+
+      <div class="form-container">
+        <h2>Add Employee Data</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="" placeholder="Employee Name" >
+          
+          <label for="position">Position:</label>
+          <input type="text" id="position" name="position" value="" placeholder="Employee Position" >
+          
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" value="" placeholder="Employee Department" >
+          
+          <label for="status">Status:</label>
+          <input type="text" id="status" name="status" value="" placeholder="Employee Status" >
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" value="" placeholder="Employee Phone Number" >
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="" placeholder="Employee Email" >
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <div class="pagination-wrapper" id="pagination-wrapper"></div>
        </div>
      </section>
       
