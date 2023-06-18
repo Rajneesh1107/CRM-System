@@ -47,7 +47,7 @@ loginFormBtn.addEventListener('click', (e) => {
   }
   else if (loginUsername.value === adminData.username && loginPassword.value === adminData.password) {
     alert("Welcome Admin")
-    window.location.href = "./addhotels.html";
+    window.location.href = "./admin.html";
   }
   else {
     fetch("https://crm-system-9eof.onrender.com/users")

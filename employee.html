@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pages</title>
+    <link rel="stylesheet" href="../styles/employee.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body> 
+
+
+
+  <div class="grid-container">
+    <!-- header -->
+    <header class="header">
+
+        <div class="menu-icon" onclick="openSidebar()">
+            <span class="material-icons-outlined">keyboard_double_arrow_left</span>
+          </div>
+         
+          <div class="header-right">
+            <span class="material-icons-outlined">notifications</span>
+            <span class="material-icons-outlined">account_circle</span>
+            <span id="username"></span>
+          </div>
+
+    </header>
+    
+
+    <!-- sidebar -->
+    <aside id="sidebar">
+        <div class="sidebar-title">
+            <div class="sidebar-brand  ">
+              Fast Grow
+            </div>
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+           
+          </div>
+
+          <!-- <input type="text" placeholder="Seach" id="searchbar"> -->
+  
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item ">
+               
+              <a href="dashboard.html"  >
+                <span class="material-icons-outlined">dashboard</span> Dashboard
+              </a>
+            </li>
+        <li class="sidebar-list-item">
+            <a href="task.html" >
+              <span class="material-icons-outlined">task</span> Tasks
+            </a>
+          </li>
+          <!-- <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">calendar_month</span> Calendar
+            </a>
+          </li> -->
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span> Customers
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="employee.html" id="active">
+              <span class="material-icons-outlined">person</span> Employees
+            </a>
+          </li>
+          
+          <!-- <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Cases
+            </a>
+          </li> -->
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+          <li class="sidebar-list-item" >
+            <a href="login.html"id="logout" >
+              <span class="material-icons-outlined" >logout</span> Log Out
+            </a>
+          </li>
+        </ul>
+
+
+    </aside>
+
+    <!-- main  -->
+    <main class="main-container">
+      <div class="nav2">
+        <h2 class="employee">Employee <span id="next"></span></h2>
+        <a class="addEmp"><p>⊕ Add new employee</p></a>
+    </div>
+        <hr>
+        <div class="nav3">
+          <div class="left">
+              <input type="text" class="searchBtn" placeholder="Search by Position, Department or Status"> 
+              <button class="positionBtn btnsrc">Position</button>
+              <button class="department btnsrc">Department</button>
+              <button class="status btnsrc">Status</button>
+              <button class="all_data btnsrc">Refresh</button>
+          </div>
+  
+        </div>
+        <div id="container">
+          <table>
+              <thead>
+                  <tr>
+                      <td><h4>Name</h4></td>
+                      <td><h4>Position</h4></td>
+                      <td><h4>Department</h4></td>
+                      <td><h4>Status</h4></td>
+                      <td><h4>Phone No.</h4></td>
+                      <td><h4>Email</h4></td>
+                  </tr>
+              </thead>
+              <tbody id="tbody">
+  
+              </tbody>
+          </table>
+          
+        </div>
+  
+        <div class="form-container">
+          <h2>Add Employee Data</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="" placeholder="Employee Name" >
+            
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" value="" placeholder="Employee Position" >
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" value="" placeholder="Employee Department" >
+            
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status" value="" placeholder="Employee Status" >
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="" placeholder="Employee Phone Number" >
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="" placeholder="Employee Email" >
+            
+            <button type="submit">Submit</button>
+          </form>
+</div>
+<div class="pagination-wrapper" id="pagination-wrapper"></div>
+    </main>
+
+</div>
+
+
+
+
+
+
+
+
+    
+
+
+     
+      
+    
+<script src="../scripts/employee.js"></script>
+<script src="scripts/dashboard.js"></script>
+
+</body>
+</html>
