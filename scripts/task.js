@@ -9,6 +9,7 @@ let btn2 = document.getElementById("btn2");
 let maintasksection = document.getElementById("maintasksection");
 let addemp = document.getElementById("addemp");
 let taskadddiv = document.getElementById("taskadddiv");
+let searchbar = document.getElementById("searchbar");
 
 let editIndex = -1; // New variable to track the index of the item being edited
 
@@ -132,3 +133,16 @@ function edititem(item, index) {
   localStorage.setItem("task", JSON.stringify(arr));
   display();
 }
+
+
+searchbar.addEventListener("input",function(){
+    arr=arr.filter((i)=>{
+        if(i.title.toLowerCase().includes(searchbar.value.toLowerCase())){
+            return true
+        }
+        else{
+            return false
+        }
+    })
+    display();
+})

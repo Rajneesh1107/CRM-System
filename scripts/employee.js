@@ -40,8 +40,7 @@ statusBtn.addEventListener("click", () => {
     paginationBox.style.display="none"
     const statusValue = searchBtn.value;
     const filteredUrl = `${url}?status=${statusValue}`;
-    searchedData(filteredUrl);
-  });
+
 
 
   
@@ -49,7 +48,7 @@ statusBtn.addEventListener("click", () => {
   positionBtn.addEventListener("click", () => {
     paginationBox.style.display="none"
     const positionValue = searchBtn.value;
-    const filteredUrl = `${url}?position=${positionValue}`;
+
     searchedData(filteredUrl);
   });
   
