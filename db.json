@@ -1,0 +1,905 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "position": "Marketing Manager",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 1234567890,
+      "email": "johnsmith@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 9876543210,
+      "email": "sarahjohnson@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "David Williams",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "In a meeting",
+      "phone_number": 5678901234,
+      "email": "davidwilliams@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Emily Brown",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 4321098765,
+      "email": "emilybrown@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Michael Johnson",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 6789054321,
+      "email": "michaeljohnson@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Jessica Davis",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Out Sick",
+      "phone_number": 2134567890,
+      "email": "jessicadavis@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "Robert Wilson",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 9876543210,
+      "email": "robertwilson@gmail.com"
+    },
+    {
+      "id": 8,
+      "name": "Jennifer Martinez",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "In a meeting",
+      "phone_number": 3456789012,
+      "email": "jennifermartinez@gmail.com"
+    },
+    {
+      "id": 9,
+      "name": "Daniel Thompson",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "In a meeting",
+      "phone_number": 8901234567,
+      "email": "danielthompson@gmail.com"
+    },
+    {
+      "id": 10,
+      "name": "Sophia Harris",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "In a meeting",
+      "phone_number": 2345678901,
+      "email": "sophiaharris@gmail.com"
+    },
+    {
+      "id": 11,
+      "name": "Matthew Turner",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "In a meeting",
+      "phone_number": 6789012345,
+      "email": "matthewturner@gmail.com"
+    },
+    {
+      "id": 12,
+      "name": "Olivia Anderson",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "In a meeting",
+      "phone_number": 9012345678,
+      "email": "oliviaanderson@gmail.com"
+    },
+    {
+      "id": 13,
+      "name": "James Lewis",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "In a meeting",
+      "phone_number": 4567890123,
+      "email": "jameslewis@gmail.com"
+    },
+    {
+      "id": 14,
+      "name": "Ava Walker",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "In a meeting",
+      "phone_number": 7890123456,
+      "email": "avawalker@gmail.com"
+    },
+    {
+      "id": 15,
+      "name": "Logan Green",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "In a meeting",
+      "phone_number": 5432109876,
+      "email": "logangreen@gmail.com"
+    },
+    {
+      "id": 16,
+      "name": "Abigail Perez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 8765432109,
+      "email": "abigailperez@gmail.com"
+    },
+    {
+      "id": 17,
+      "name": "Benjamin Scott",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "benjaminscott@gmail.com"
+    },
+    {
+      "id": 18,
+      "name": "Chloe Lee",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Out Sick",
+      "phone_number": 4321098765,
+      "email": "chloeleee@gmail.com"
+    },
+    {
+      "id": 19,
+      "name": "Elijah Garcia",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 2109876543,
+      "email": "elijahgarcia@gmail.com"
+    },
+    {
+      "id": 20,
+      "name": "Mia King",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Out Sick",
+      "phone_number": 8765432109,
+      "email": "miaking@gmail.com"
+    },
+    {
+      "id": 21,
+      "name": "Lucas Hernandez",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Out Sick",
+      "phone_number": 5432109876,
+      "email": "lucashernandez@gmail.com"
+    },
+    {
+      "id": 22,
+      "name": "Lily Martinez",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Out Sick",
+      "phone_number": 3210987654,
+      "email": "lilymartinez@gmail.com"
+    },
+    {
+      "id": 23,
+      "name": "Henry Johnson",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Out Sick",
+      "phone_number": 6543210987,
+      "email": "henryjohnson@gmail.com"
+    },
+    {
+      "id": 24,
+      "name": "Victoria Adams",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 9876543210,
+      "email": "victoriaadams@gmail.com"
+    },
+    {
+      "id": 25,
+      "name": "Christopher Taylor",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Out Sick",
+      "phone_number": 5432109876,
+      "email": "christophertaylor@gmail.com"
+    },
+    {
+      "id": 26,
+      "name": "Grace Rodriguez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Out Sick",
+      "phone_number": 7654321098,
+      "email": "gracerodriguez@gmail.com"
+    },
+    {
+      "id": 27,
+      "name": "Samuel Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Out Sick",
+      "phone_number": 3210987654,
+      "email": "samuelwright@gmail.com"
+    },
+    {
+      "id": 28,
+      "name": "Natalie Morgan",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Out Sick",
+      "phone_number": 6543210987,
+      "email": "nataliemorgan@gmail.com"
+    },
+    {
+      "id": 29,
+      "name": "Andrew Turner",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 9876543210,
+      "email": "andrewturner@gmail.com"
+    },
+    {
+      "id": 30,
+      "name": "Zoe Mitchell",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Out Sick",
+      "phone_number": 8765432109,
+      "email": "zoemitchell@gmail.com"
+    },
+    {
+      "id": 31,
+      "name": "Joseph Adams",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "josephadams@gmail.com"
+    },
+    {
+      "id": 32,
+      "name": "Sophia Thomas",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "sophiathomas@gmail.com"
+    },
+    {
+      "id": 33,
+      "name": "Daniel Clark",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "danielclark@gmail.com"
+    },
+    {
+      "id": 34,
+      "name": "Isabella Garcia",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "isabellagarcia@gmail.com"
+    },
+    {
+      "id": 35,
+      "name": "Jackson Lee",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 5432109876,
+      "email": "jacksonlee@gmail.com"
+    },
+    {
+      "id": 36,
+      "name": "Emily Johnson",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 7654321098,
+      "email": "emilyjohnson@gmail.com"
+    },
+    {
+      "id": 37,
+      "name": "Matthew Brown",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "matthewbrown@gmail.com"
+    },
+    {
+      "id": 38,
+      "name": "Ava Wilson",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "avawilson@gmail.com"
+    },
+    {
+      "id": 39,
+      "name": "David Rodriguez",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "davidrodriguez@gmail.com"
+    },
+    {
+      "id": 40,
+      "name": "Emma Martinez",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 9876543210,
+      "email": "emmamartinez@gmail.com"
+    },
+    {
+      "id": 41,
+      "name": "Noah Turner",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "noahturner@gmail.com"
+    },
+    {
+      "id": 42,
+      "name": "Charlotte Scott",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "charlottescott@gmail.com"
+    },
+    {
+      "id": 43,
+      "name": "Liam Thompson",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "liamthompson@gmail.com"
+    },
+    {
+      "id": 44,
+      "name": "Mia Adams",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "miaadams@gmail.com"
+    },
+    {
+      "id": 45,
+      "name": "Ethan Lewis",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 5432109876,
+      "email": "ethanlewis@gmail.com"
+    },
+    {
+      "id": 46,
+      "name": "Sophia White",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 7654321098,
+      "email": "sophiawhite@gmail.com"
+    },
+    {
+      "id": 47,
+      "name": "Jackson Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "jacksonwright@gmail.com"
+    },
+    {
+      "id": 48,
+      "name": "Ava Martin",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "avamartin@gmail.com"
+    },
+    {
+      "id": 49,
+      "name": "Carter Davis",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "carterdavis@gmail.com"
+    },
+    {
+      "id": 50,
+      "name": "Scarlett Taylor",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 9876543210,
+      "email": "scarletttaylor@gmail.com"
+    },
+    {
+      "id": 51,
+      "name": "Luke Adams",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "lukeadams@gmail.com"
+    },
+    {
+      "id": 52,
+      "name": "Grace Thomas",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "gracethomas@gmail.com"
+    },
+    {
+      "id": 53,
+      "name": "Henry Clark",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "henryclark@gmail.com"
+    },
+    {
+      "id": 54,
+      "name": "Chloe Garcia",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "chloegarcia@gmail.com"
+    },
+    {
+      "id": 55,
+      "name": "Wyatt Lee",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 5432109876,
+      "email": "wyattlee@gmail.com"
+    },
+    {
+      "id": 56,
+      "name": "Evelyn Rodriguez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 7654321098,
+      "email": "evelynrodriguez@gmail.com"
+    },
+    {
+      "id": 57,
+      "name": "Gabriel Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "gabrielwright@gmail.com"
+    },
+    {
+      "id": 58,
+      "name": "Lily Scott",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "lilyscott@gmail.com"
+    },
+    {
+      "id": 59,
+      "name": "Owen Thompson",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "owenthompson@gmail.com"
+    },
+    {
+      "id": 60,
+      "name": "Avery Martin",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 9876543210,
+      "email": "averymartin@gmail.com"
+    },
+    {
+      "id": 61,
+      "name": "Madison Turner",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "madisonturner@gmail.com"
+    },
+    {
+      "id": 62,
+      "name": "Henry White",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "henrywhite@gmail.com"
+    },
+    {
+      "id": 63,
+      "name": "Emily Thompson",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "emilythompson@gmail.com"
+    },
+    {
+      "id": 64,
+      "name": "Michael Adams",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "michaeladams@gmail.com"
+    },
+    {
+      "id": 65,
+      "name": "Sofia Lewis",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 5432109876,
+      "email": "sofialewis@gmail.com"
+    },
+    {
+      "id": 66,
+      "name": "James Rodriguez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 7654321098,
+      "email": "jamesrodriguez@gmail.com"
+    },
+    {
+      "id": 67,
+      "name": "Olivia Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "oliviawright@gmail.com"
+    },
+    {
+      "id": 68,
+      "name": "William Scott",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "williamscott@gmail.com"
+    },
+    {
+      "id": 69,
+      "name": "Avery Clark",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "averyclark@gmail.com"
+    },
+    {
+      "id": 70,
+      "name": "Ella Taylor",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 9876543210,
+      "email": "ellataylor@gmail.com"
+    },
+    {
+      "id": 71,
+      "name": "Benjamin Adams",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "In a meeting",
+      "phone_number": 4321098765,
+      "email": "benjaminadams@gmail.com"
+    },
+    {
+      "id": 72,
+      "name": "Scarlett Thomas",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "In a meeting",
+      "phone_number": 3210987654,
+      "email": "scarlettthomas@gmail.com"
+    },
+    {
+      "id": 73,
+      "name": "Gabriel Clark",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "In a meeting",
+      "phone_number": 6543210987,
+      "email": "gabrielclark@gmail.com"
+    },
+    {
+      "id": 74,
+      "name": "Aria Garcia",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "In a meeting",
+      "phone_number": 3210987654,
+      "email": "ariagarcia@gmail.com"
+    },
+    {
+      "id": 75,
+      "name": "Mason Lee",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "In a meeting",
+      "phone_number": 5432109876,
+      "email": "masonlee@gmail.com"
+    },
+    {
+      "id": 76,
+      "name": "Scarlett Rodriguez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "In a meeting",
+      "phone_number": 7654321098,
+      "email": "scarlettrodriguez@gmail.com"
+    },
+    {
+      "id": 77,
+      "name": "Daniel Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "In a meeting",
+      "phone_number": 4321098765,
+      "email": "danielwright@gmail.com"
+    },
+    {
+      "id": 78,
+      "name": "Mia Scott",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "In a meeting",
+      "phone_number": 6543210987,
+      "email": "miascott@gmail.com"
+    },
+    {
+      "id": 79,
+      "name": "Samuel Thompson",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "In a meeting",
+      "phone_number": 3210987654,
+      "email": "samuelthompson@gmail.com"
+    },
+    {
+      "id": 80,
+      "name": "Victoria Martin",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "In a meeting",
+      "phone_number": 9876543210,
+      "email": "victoriamartin@gmail.com"
+    },
+    {
+      "id": 81,
+      "name": "David Adams",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 4321098765,
+      "email": "davidadams@gmail.com"
+    },
+    {
+      "id": 82,
+      "name": "Sofia White",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "sofiawhite@gmail.com"
+    },
+    {
+      "id": 83,
+      "name": "Joseph Clark",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Active",
+      "phone_number": 6543210987,
+      "email": "josephclark@gmail.com"
+    },
+    {
+      "id": 84,
+      "name": "Harper Garcia",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Active",
+      "phone_number": 3210987654,
+      "email": "harpergarcia@gmail.com"
+    },
+    {
+      "id": 85,
+      "name": "Daniel Lewis",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Active",
+      "phone_number": 5432109876,
+      "email": "daniellewis@gmail.com"
+    },
+    {
+      "id": 86,
+      "name": "Evelyn Rodriguez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Active",
+      "phone_number": 7654321098,
+      "email": "evelynrodriguez@gmail.com"
+    },
+    {
+      "id": 87,
+      "name": "Samuel Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Out Sick",
+      "phone_number": 4321098765,
+      "email": "samuelwright@gmail.com"
+    },
+    {
+      "id": 88,
+      "name": "Abigail Scott",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Out Sick",
+      "phone_number": 6543210987,
+      "email": "abigailscott@gmail.com"
+    },
+    {
+      "id": 89,
+      "name": "Matthew Thompson",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 3210987654,
+      "email": "matthewthompson@gmail.com"
+    },
+    {
+      "id": 90,
+      "name": "Sofia Martin",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Out Sick",
+      "phone_number": 9876543210,
+      "email": "sofiamartin@gmail.com"
+    },
+    {
+      "id": 91,
+      "name": "Joseph Adams",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "status": "Out Sick",
+      "phone_number": 4321098765,
+      "email": "josephadams@gmail.com"
+    },
+    {
+      "id": 92,
+      "name": "Mia Thomas",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "status": "Out Sick",
+      "phone_number": 3210987654,
+      "email": "miathomas@gmail.com"
+    },
+    {
+      "id": 93,
+      "name": "Jacob Clark",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Out Sick",
+      "phone_number": 6543210987,
+      "email": "jacobclark@gmail.com"
+    },
+    {
+      "id": 94,
+      "name": "Amelia Garcia",
+      "position": "HR Specialist",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 3210987654,
+      "email": "ameliagarcia@gmail.com"
+    },
+    {
+      "id": 95,
+      "name": "Ethan Lee",
+      "position": "Finance Manager",
+      "department": "Finance",
+      "status": "Out Sick",
+      "phone_number": 5432109876,
+      "email": "ethanlee@gmail.com"
+    },
+    {
+      "id": 96,
+      "name": "Harper Rodriguez",
+      "position": "Marketing Coordinator",
+      "department": "Marketing",
+      "status": "Out Sick",
+      "phone_number": 7654321098,
+      "email": "harperrodriguez@gmail.com"
+    },
+    {
+      "id": 97,
+      "name": "Daniel Wright",
+      "position": "Sales Manager",
+      "department": "Sales",
+      "status": "Out Sick",
+      "phone_number": 4321098765,
+      "email": "danielwright@gmail.com"
+    },
+    {
+      "id": 98,
+      "name": "Ella Scott",
+      "position": "Product Specialist",
+      "department": "Product",
+      "status": "Out Sick",
+      "phone_number": 6543210987,
+      "email": "ellascott@gmail.com"
+    },
+    {
+      "id": 99,
+      "name": "Oliver Thompson",
+      "position": "HR Manager",
+      "department": "Human Resources",
+      "status": "Out Sick",
+      "phone_number": 3210987654,
+      "email": "oliverthompson@gmail.com"
+    },
+    {
+      "id": 100,
+      "name": "Emily Martin",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "status": "Out Sick",
+      "phone_number": 9876543210,
+      "email": "emilymartin@gmail.com"
+    }
+  ]
+
+}
