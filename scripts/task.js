@@ -143,6 +143,8 @@ searchbar.addEventListener("input",function(){
         else{
             return false
         }
+
     })
+    
     display();
 })
