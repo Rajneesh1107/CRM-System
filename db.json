@@ -1023,9 +1023,7 @@
        "email": "avascott@example.com"
     }
 ,{
-       "id": 16
-
-,
+       "id": 16,
        "customer_nameMale": "Noah Green",
        "case_status": "completed",
        "family_status": "Married",
