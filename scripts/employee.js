@@ -14,7 +14,15 @@ const statusBtn = document.querySelector(".status");
 const positionBtn = document.querySelector(".positionBtn");
 const departmentBtn=document.querySelector(".department")
 
-// Event Listeners
+
+// login username on DOM
+
+let username=document.getElementById("username");
+const user = JSON.parse(localStorage.getItem('username')) || 'User';
+username.innerText=user;
+
+
+
 addEmpBtn.addEventListener("click", () => {
   container.style.display = "none";
   paginationBox.style.display = "none";
@@ -41,7 +49,7 @@ statusBtn.addEventListener("click", () => {
     paginationBox.style.display="none"
     const statusValue = searchBtn.value;
     const filteredUrl = `${url}?status=${statusValue}`;
-    searchedData(filteredUrl.toLowerCase());
+    searchedData(filteredUrl);
   });
 
 
