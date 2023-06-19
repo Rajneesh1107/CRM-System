@@ -1,5 +1,29 @@
 {
   "users": [
+      {
+         "id": 1,
+         "customer_nameMale": "Sarah Johnson",
+         "case_status": "completed",
+         "family_status": "Single",
+         "phone_number": 9876543210,
+         "email": "sarahjohnson@gmail.com"
+      },
+      {
+         "id": 2,
+         "customer_nameMale": "Rajneesh Johnson",
+         "case_status": "In progress",
+         "family_status": "Married",
+         "phone_number": 4565613210,
+         "email": "sara dfsadf@gmail.com"
+      },
+      {
+         "id": 3,
+         "customer_nameMale": "Mayank Jofson",
+         "case_status": "To do",
+         "family_status": "Snigle",
+         "phone_number": 9876543210,
+         "email": "manyanahjohnson@gmail.com"
+      },
     {
       "id": 1,
       "name": "John Smith",
@@ -899,6 +923,322 @@
       "status": "Out Sick",
       "phone_number": 9876543210,
       "email": "emilymartin@gmail.com"
+    }
+  ],
+  "customers":[
+{
+      "id": 4,
+      "customer_nameMale": "John Smith",
+      "case_status": "completed",
+      "family_status": "Married",
+      "phone_number": 1234567890,
+      "email": "johnsmith@example.com"
+   },
+{
+      "id": 5,
+      "customer_nameMale": "Emily Davis",
+      "case_status": "In progress",
+      "family_status": "Single",
+      "phone_number": 9876543210,
+      "email": "emilydavis@example.com"
+   }
+,{
+      "id": 6,
+      "customer_nameMale": "Michael Johnson",
+      "case_status": "To do",
+      "family_status": "Married",
+      "phone_number": 4561237890,
+      "email": "michaeljohnson@example.com"
+   }
+,{
+      "id": 7,
+      "customer_nameMale": "Jennifer Brown",
+      "case_status": "completed",
+      "family_status": "Single",
+      "phone_number": 7890123456,
+      "email": "jenniferbrown@example.com"
+   }
+,{
+      "id": 8,
+      "customer_nameMale": "Robert Wilson",
+      "case_status": "In progress",
+      "family_status": "Married",
+      "phone_number": 3216549870,
+      "email": "robertwilson@example.com"
+   }
+,{
+      "id": 9,
+      "customer_nameMale": "Sophia Johnson",
+      "case_status": "To do",
+      "family_status": "Single",
+      "phone_number": 6543210987,
+      "email": "sophiajohnson@example.com"
+   }
+, {
+      "id": 10,
+      "customer_nameMale": "William Anderson",
+      "case_status": "completed",
+      "family_status": "Married",
+      "phone_number": 1029384756,
+      "email": "williamanderson@example.com"
+   }
+,{
+      "id": 11,
+      "customer_nameMale": "Olivia Martinez",
+      "case_status": "In progress",
+      "family_status": "Single",
+      "phone_number": 5432167890,
+      "email": "oliviamartinez@example.com"
+   }
+, {
+      "id": 12,
+      "customer_nameMale": "James Thompson",
+      "case_status": "To do",
+      "family_status": "Married",
+      "phone_number": 7890654321,
+      "email": "jamesthompson@example.com"
+   }
+,{
+       "id": 13,
+       "customer_nameMale": "Emma Lewis",
+       "case_status": "completed",
+       "family_status": "Single",
+       "phone_number": 1472583690,
+       "email": "emmalewis@example.com"
+    }
+,{
+       "id": 14,
+       "customer_nameMale": "Liam Walker",
+       "case_status": "In progress",
+       "family_status": "Married",
+       "phone_number": 3698521470,
+       "email": "liamwalker@example.com"
+    }
+,{
+       "id": 15,
+       "customer_nameMale": "Ava Scott",
+       "case_status": "To do",
+       "family_status": "Single",
+       "phone_number": 2587413690,
+       "email": "avascott@example.com"
+    }
+,{
+       "id": 16
+
+,
+       "customer_nameMale": "Noah Green",
+       "case_status": "completed",
+       "family_status": "Married",
+       "phone_number": 7418529630,
+       "email": "noahgreen@example.com"
+    }
+, {
+       "id": 17,
+       "customer_nameMale": "Isabella Lee",
+       "case_status": "In progress",
+       "family_status": "Single",
+       "phone_number": 9517538520,
+       "email": "isabellalee@example.com"
+    }
+,{
+       "id": 18,
+       "customer_nameMale": "Mason Turner",
+       "case_status": "To do",
+       "family_status": "Married",
+       "phone_number": 8527419630,
+       "email": "masonturner@example.com"
+    },
+{
+       "id": 19,
+       "customer_nameMale": "Mia Cooper",
+       "case_status": "completed",
+       "family_status": "Single",
+       "phone_number": 7539518520,
+       "email": "miacooper@example.com"
+    }
+,{
+       "id": 20,
+       "customer_nameMale": "Ethan Parker",
+       "case_status": "In progress",
+       "family_status": "Married",
+       "phone_number": 3698521470,
+       "email": "ethanparker@example.com"
+    }
+,{
+       "id": 21,
+       "customer_nameMale": "Aria Wright",
+       "case_status": "To do",
+       "family_status": "Single",
+       "phone_number": 9876543210,
+       "email": "ariawright@example.com"
+    }
+,{
+       "id": 22,
+       "customer_nameMale": "Logan Reed",
+       "case_status": "completed",
+       "family_status": "Married",
+       "phone_number": 4561237890,
+       "email": "loganreed@example.com"
+    }
+,{
+       "id": 23,
+       "customer_nameMale": "Abigail Cook",
+       "case_status": "In progress",
+       "family_status": "Single",
+       "phone_number": 7890123456,
+       "email": "abigailcook@example.com"
+    }
+, {
+       "id": 24,
+       "customer_nameMale": "Lucas Hill",
+       "case_status": "To do",
+       "family_status": "Married",
+       "phone_number": 3216549870,
+       "email": "lucashill@example.com"
+    }
+,{
+       "id": 25,
+       "customer_nameMale": "Harper Bell",
+       "case_status": "completed",
+       "family_status": "Single",
+       "phone_number": 6543210987,
+       "email": "harperbell@example.com"
+    }
+, {
+       "id": 26,
+       "customer_nameMale": "Jackson Adams",
+       "case_status": "In progress",
+       "family_status": "Married",
+       "phone_number": 1029384756,
+       "email": "jacksonadams@example.com"
+    }
+,{
+       "id": 27,
+       "customer_nameMale": "Sophia Bennett",
+       "case_status": "To do",
+       "family_status": "Single",
+       "phone_number": 5432167890,
+       "email": "sophiabennett@example.com"
+    }
+,{
+       "id": 28,
+       "customer_nameMale": "Aiden Brooks",
+       "case_status": "completed",
+       "family_status": "Married",
+       "phone_number": 7890654321,
+       "email": "aidenbrooks@example.com"
+    }
+,{
+       "id": 29,
+       "customer_nameMale": "Charlotte Cox",
+       "case_status": "In progress",
+       "family_status": "Single",
+       "phone_number": 1472583690,
+       "email": "charlottecox@example.com"
+    }
+, {
+       "id": 30,
+       "customer_nameMale": "Elijah Evans",
+       "case_status": "To do",
+       "family_status": "Married",
+       "phone_number": 3698521470,
+       "email": "elijahevans@example.com"
+    }
+,{
+       "id": 31,
+       "customer_nameMale": "Amelia Fisher",
+       "case_status": "completed",
+       "family_status": "Single",
+       "phone_number": 2587413690,
+       "email": "ameliafisher@example.com"
+    }
+, {
+       "id": 32,
+       "customer_nameMale": "Carter Gray",
+       "case_status": "In progress",
+       "family_status": "Married",
+       "phone_number": 7418529630,
+       "email": "cartergray@example.com"
+    }
+, {
+       "id": 33,
+       "customer_nameMale": "Luna Hayes",
+       "case_status": "To do",
+       "family_status": "Single",
+       "phone_number": 9517538520,
+       "email": "lunahayes@example.com"
+    }
+,{
+       "id": 34,
+       "customer_nameMale": "Mateo Howard",
+       "case_status": "completed",
+       "family_status": "Married",
+       "phone_number": 8527419630,
+       "email": "mateohoward@example.com"
+    }
+,{
+       "id": 35,
+       "customer_nameMale": "Avery James",
+       "case_status": "In progress",
+       "family_status": "Single",
+       "phone_number": 7539518520,
+       "email": "averyjames@example.com"
+    }
+, {
+       "id": 36,
+       "customer_nameMale": "Grayson King",
+       "case_status": "To do",
+       "family_status": "Married",
+       "phone_number": 3698521470,
+       "email": "graysonking@example.com"
+    }
+,{
+       "id": 37,
+       "customer_nameMale": "Evelyn Lopez",
+       "case_status": "completed",
+       "family_status": "Single",
+       "phone_number": 9876543210,
+       "email": "evelynlopez@example.com"
+    }
+,{
+       "id": 38,
+       "customer_nameMale": "Luke Morgan",
+       "case_status": "In progress",
+       "family_status": "Married",
+       "phone_number": 4561237890,
+       "email": "lukemorgan@example.com"
+    }
+,{
+       "id": 39,
+       "customer_nameMale": "Scarlett Nelson",
+       "case_status": "To do",
+       "family_status": "Single",
+       "phone_number": 7890123456,
+       "email": "scarlettnelson@example.com"
+    }
+, {
+       "id": 41,
+       "customer_nameMale": "Chloe Reed",
+       "case_status": "In progress",
+       "family_status": "Single",
+       "phone_number": 6543210987,
+       "email": "chloereed@example.com"
+    }
+, {
+       "id": 42,
+       "customer_nameMale": "Daniel Roberts",
+       "case_status": "To do",
+       "family_status": "Married",
+       "phone_number": 1029384756,
+       "email": "danielroberts@example.com"
+    }
+,{
+       "id": 43,
+       "customer_nameMale": "Sofia Smith",
+       "case_status": "completed",
+       "family_status": "Single",
+       "phone_number": 5432167890,
+       "email": "sofiasmith@example.com"
     }
   ]
 
