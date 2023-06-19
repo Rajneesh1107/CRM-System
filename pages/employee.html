@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Pages</title>
+    <link rel="stylesheet" href="../styles/employee.css">
+</head>
+<body> 
+
+
+
+     <section>
+       <div id="leftSide">
+
+       </div>
+
+       <div id="rightSide">
+        <nav id="nav">
+            <div class="logo">
+              <h2>Logo</h2>
+            </div>
+            <div class="rightNav">
+              <div class="notification"><h2>notification</h2></div>
+              <div class="login"><h2>Login</h2></div>
+            </div>
+        </nav>
+        <div class="nav2">
+            <h2 class="employee">Employee <span id="next"></span></h2>
+            <a class="addEmp"><p>⊕ Add new employee</p></a>
+        </div>
+
+      <div class="nav3">
+        <div class="left">
+            <input type="text" class="searchBtn" placeholder="Search by Position, Department or Status"> 
+            <button class="positionBtn btnsrc">Position</button>
+            <button class="department btnsrc">Department</button>
+            <button class="status btnsrc">Status</button>
+            <button class="all_data btnsrc">Refresh</button>
+        </div>
+
+      </div>
+      <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <td><h4>Name</h4></td>
+                    <td><h4>Position</h4></td>
+                    <td><h4>Department</h4></td>
+                    <td><h4>Status</h4></td>
+                    <td><h4>Phone No.</h4></td>
+                    <td><h4>Email</h4></td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+        
+      </div>
+
+      <div class="form-container">
+        <h2>Add Employee Data</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="" placeholder="Employee Name" >
+          
+          <label for="position">Position:</label>
+          <input type="text" id="position" name="position" value="" placeholder="Employee Position" >
+          
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" value="" placeholder="Employee Department" >
+          
+          <label for="status">Status:</label>
+          <input type="text" id="status" name="status" value="" placeholder="Employee Status" >
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" value="" placeholder="Employee Phone Number" >
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="" placeholder="Employee Email" >
+          
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+
+      <div class="pagination-wrapper" id="pagination-wrapper"></div>
+       </div>
+     </section>
+      
+    
+</body>
+<script src="../scripts/employee.js"></script>
+</html>
